@@ -1,0 +1,29 @@
+{
+  "name": "discordjs-ts-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./dist/src/index.js",
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc",
+    "deploy-commands:global": "ts-node ./src/tools/deploy-commands.ts",
+    "deploy-commands:guild": "ts-node ./src/tools/deploy-commands-guild.ts",
+    "clear-commands:all": "ts-node ./src/tools/clear-commands.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/rest": "^0.3.0",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^13.6.0",
+    "dotenv": "^14.3.2"
+  }
+}
